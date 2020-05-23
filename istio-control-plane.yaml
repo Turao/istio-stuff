@@ -1,0 +1,63 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: istio-system
+
+---
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: grafana
+
+---
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kiali
+
+---
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: tracing
+
+---
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: prometheus
+
+---
+
+apiVersion: install.istio.io/v1alpha1
+kind: IstioOperator
+metadata:
+  name: control-plane
+  namespace: istio-system # Istio looks here by default
+spec:
+  profile: default
+  
+  addonComponents:
+    grafana:
+      enabled: true
+      namespace: grafana
+    kiali:
+      enabled: true
+      namespace: kiali
+    tracing:
+      enabled: true
+      # namespace: tracing
+    # prometheus:
+    #   enabled: true
+    #   namespace: prometheus
+
+  values:
+    # grafana:
+    kiali:
+      createDemoSecret: true
+    # tracing:
+    # prometheus:
