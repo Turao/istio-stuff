@@ -1,0 +1,130 @@
+<mxfile host="c01606d7-d201-46c0-b465-23e785b067a6" modified="2020-09-16T23:31:44.103Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.49.0 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36" etag="aJmUB9d3dRPXrZBfdkeb" version="13.1.3">
+    <diagram id="6hGFLwfOUW9BJ-s0fimq" name="Page-1">
+        <mxGraphModel dx="861" dy="299" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;rounded=1;arcSize=2;dashed=1;imageAspect=0;strokeWidth=3;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="40" width="1040" height="880" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="Gateway" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;direction=east;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="680" width="80" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;font color=&quot;#000000&quot;&gt;Namespace A&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4E1F5;strokeColor=#36393d;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;dashed=1;arcSize=4;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="330" width="400" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="109" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;startArrow=classic;startFill=1;" parent="1" source="14" target="17" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="App1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="360" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Envoy Proxy" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FF66B3;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="360" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="&lt;font color=&quot;#000000&quot;&gt;Namespace B&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#36393d;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;dashed=1;arcSize=4;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="330" width="400" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;startArrow=classic;startFill=1;" parent="1" source="81" target="82" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="App1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="440" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="Envoy Proxy" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FF66B3;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="440" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="160" y="80" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="ArgoCD" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontColor=#000000;fillColor=none;strokeColor=#000000;" parent="97" vertex="1">
+                    <mxGeometry width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="ArgoCD" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;" parent="97" vertex="1">
+                    <mxGeometry x="40" y="12.5" width="80" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="Istio&lt;br&gt;Operator" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;" parent="97" vertex="1">
+                    <mxGeometry x="40" y="65" width="80" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="RabbitMQ" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;" parent="97" vertex="1">
+                    <mxGeometry x="160" y="12.5" width="80" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="App1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;" parent="97" vertex="1">
+                    <mxGeometry x="160" y="65" width="80" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="App2" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;" parent="97" vertex="1">
+                    <mxGeometry x="280" y="12.5" width="80" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="AppN" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;" parent="97" vertex="1">
+                    <mxGeometry x="280" y="65" width="80" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="600" y="80" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Observability" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontColor=#000000;fillColor=none;strokeColor=#000000;" parent="98" vertex="1">
+                    <mxGeometry width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Grafana" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;" parent="98" vertex="1">
+                    <mxGeometry x="40" y="12.5" width="80" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Prometheus" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;" parent="98" vertex="1">
+                    <mxGeometry x="160" y="12.5" width="80" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Jaeger" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;" parent="98" vertex="1">
+                    <mxGeometry x="280" y="12.5" width="80" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Kiali" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;" parent="98" vertex="1">
+                    <mxGeometry x="40" y="65" width="80" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="Loki" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;" parent="98" vertex="1">
+                    <mxGeometry x="160" y="65" width="80" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="&lt;font color=&quot;#000000&quot;&gt;messaging&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCE9F;strokeColor=#36393d;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;dashed=1;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="230" width="840" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="112" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;startArrow=classic;startFill=1;" parent="1" source="91" target="92" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="Envoy Proxy" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FF66B3;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="245" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="RabbitMQ" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="245" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="111" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;startArrow=classic;startFill=1;" parent="1" source="99" target="102" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="AppN" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="600" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="110" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;startArrow=classic;startFill=1;" parent="1" source="100" target="101" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="..." style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="520" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="Envoy Proxy" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FF66B3;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="520" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" value="Envoy Proxy" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FF66B3;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="600" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="160" y="800" width="840" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;font color=&quot;#000000&quot;&gt;Istio's Control Plane&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#36393d;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;dashed=1;" parent="106" vertex="1">
+                    <mxGeometry width="840" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Pilot" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;" parent="106" vertex="1">
+                    <mxGeometry x="240" y="17.5" width="80" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Citatel" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;" parent="106" vertex="1">
+                    <mxGeometry x="380" y="17.5" width="80" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="Galley" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;" parent="106" vertex="1">
+                    <mxGeometry x="520" y="17.5" width="80" height="45" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

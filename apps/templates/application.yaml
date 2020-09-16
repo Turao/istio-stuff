@@ -1,0 +1,31 @@
+{{ range $appName, $appData := .Values.applications }}
+{{ if $appData.enabled }}
+
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: {{ $appName }}
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: {{ $appData.repository }}
+    targetRevision: {{ $appData.revision }}
+    path: {{ $appData.path }}
+
+  # Destination cluster and namespace to deploy the application
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: {{ $appData.namespace }}
+
+  # Sync policy
+  # syncPolicy:
+  #   automated:
+  #     prune: {{ $appData.prune }}
+  #     selfHeal: {{ $appData.selfHeal }}
+
+{{ end }}
+---
+{{ end }}

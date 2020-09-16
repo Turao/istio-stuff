@@ -1,0 +1,27 @@
+argo-cd:
+  dex:
+    enabled: false
+  
+  server:
+    config:
+      # Enables application status badge feature
+      statusbadge.enabled: 'true'
+
+applications:
+  argocd:
+    enabled: false
+    repository: 'https://github.com/turao/istio-stuff'
+    revision: HEAD
+    path: argocd
+    namespace: argocd
+    prune: true
+    selfHeal: true
+
+  istio-operator:
+    enabled: true
+    repository: https://github.com/istio/istio
+    revision: HEAD
+    path: manifests/charts/istio-operator
+    namespace: istio-operator
+    prune: true
+    selfHeal: true
