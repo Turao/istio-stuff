@@ -8,6 +8,15 @@ argo-cd:
       statusbadge.enabled: 'true'
 
 applications:
+  apps:
+    enabled: true
+    repository: https://github.com/turao/istio-stuff
+    revision: HEAD
+    path: argocd
+    namespace: argocd
+    prune: true
+    selfHeal: true
+
   argocd:
     enabled: true
     repository: https://github.com/turao/istio-stuff
