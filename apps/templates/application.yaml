@@ -21,10 +21,10 @@ spec:
     namespace: {{ $appData.namespace }}
 
   # Sync policy
-  # syncPolicy:
-  #   automated:
-  #     prune: {{ $appData.prune }}
-  #     selfHeal: {{ $appData.selfHeal }}
+  syncPolicy:
+    automated:
+      prune: {{ $appData.prune }}
+      selfHeal: {{ $appData.selfHeal }}
 
 {{ end }}
 ---

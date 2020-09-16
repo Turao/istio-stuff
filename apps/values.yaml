@@ -10,7 +10,7 @@ argo-cd:
 applications:
   argocd:
     enabled: true
-    repository: 'https://github.com/turao/istio-stuff'
+    repository: https://github.com/turao/istio-stuff
     revision: HEAD
     path: argocd
     namespace: argocd
@@ -23,5 +23,14 @@ applications:
     revision: HEAD
     path: manifests/charts/istio-operator
     namespace: istio-operator
+    prune: true
+    selfHeal: true
+  
+  service-mesh:
+    enabled: true
+    repository: https://github.com/turao/istio-stuff
+    revision: HEAD
+    path: service-mesh
+    namespace: istio-system
     prune: true
     selfHeal: true
