@@ -1,0 +1,56 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-cm
+  namespace: argocd
+  labels:
+    app.kubernetes.io/name: argocd-cm
+    app.kubernetes.io/part-of: argocd
+data:
+  # Argo CD's externally facing base URL (optional). Required when configuring SSO
+  url: https://argo-cd-demo.argoproj.io
+
+  # Enables application status badge feature
+  statusbadge.enabled: 'true'
+
+  # Enables anonymous user access. The anonymous users get default role permissions specified argocd-rbac-cm.yaml.
+  users.anonymous.enabled: "true"
+
+  # Enables google analytics tracking is specified
+  ga.trackingid: 'UA-12345-1'
+  # Unless set to 'false' then user ids are hashed before sending to google analytics
+  ga.anonymizeusers: 'false'
+
+  # the URL for getting chat help, this will typically be your Slack channel for support
+  help.chatUrl: 'https://mycorp.slack.com/argo-cd'
+  # the text for getting chat help, defaults to "Chat now!"
+  help.chatText: 'Chat now!'
+
+  # Non-standard and private Helm repositories (deprecated in 1.3).
+  helm.repositories: |
+    - url: https://storage.googleapis.com/istio-prerelease/daily-build/master-latest-daily/charts
+      name: istio.io
+
+  # The metadata.label key name where Argo CD injects the app name as a tracking label (optional).
+  # Tracking labels are used to determine which resources need to be deleted when pruning.
+  # If omitted, Argo CD injects the app name into the label: 'app.kubernetes.io/instance'
+  application.instanceLabelKey: mycompany.com/appname
+
+  # disables admin user. Admin is enabled by default
+  admin.enabled: "false"
+  # add an additional local user with apiKey and login capabilities
+  #   apiKey - allows generating API keys
+  #   login - allows to login using UI
+  accounts.alice: apiKey, login
+  # disables user. User is enabled by default
+  accounts.alice.enabled: "false"
+
+  # The location of optional user-defined CSS that is loaded at runtime.
+  # Local CSS Files:
+  # - If the supplied path is to a file mounted on the argocd-server container, that file should be mounted 
+  #   within a subdirectory of the existing "/shared/app" directory (e.g. "/shared/app/custom").  Otherwise,
+  #   the file will likely fail to be imported by the browser with an "incorrect MIME type" error.
+  # - The path should be specified relative to the "/shared/app" directory; not as an absolute path.
+  # Remote CSS Files:
+  # - Files may also be loaded from remote locations via fully qualified URLs.
+  ui.cssurl: "./custom/my-styles.css"
