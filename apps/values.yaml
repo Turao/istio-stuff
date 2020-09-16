@@ -9,7 +9,7 @@ argo-cd:
 
 applications:
   argocd:
-    enabled: false
+    enabled: true
     repository: 'https://github.com/turao/istio-stuff'
     revision: HEAD
     path: argocd
