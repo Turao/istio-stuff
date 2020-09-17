@@ -25,3 +25,12 @@ applications:
     namespace: istio-operator
     prune: true
     selfHeal: true
+
+  istio:
+    enabled: true
+    repository: https://github.com/turao/istio-stuff
+    revision: HEAD
+    path: service-mesh
+    namespace: argocd
+    prune: true
+    selfHeal: true
