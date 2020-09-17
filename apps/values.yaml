@@ -8,38 +8,11 @@ argo-cd:
       statusbadge.enabled: 'true'
 
 applications:
-  apps:
-    enabled: true
-    repository: https://github.com/turao/istio-stuff
-    revision: HEAD
-    path: apps
-    namespace: argocd
-    prune: true
-    selfHeal: true
-
-  argocd:
-    enabled: true
-    repository: https://github.com/turao/istio-stuff
-    revision: HEAD
-    path: argocd
-    namespace: argocd
-    prune: true
-    selfHeal: true
-
   istio-operator:
     enabled: true
     repository: https://github.com/istio/istio
     revision: HEAD
     path: manifests/charts/istio-operator
     namespace: istio-operator
-    prune: true
-    selfHeal: true
-  
-  service-mesh:
-    enabled: true
-    repository: https://github.com/turao/istio-stuff
-    revision: HEAD
-    path: service-mesh
-    namespace: istio-system
     prune: true
     selfHeal: true
