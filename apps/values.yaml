@@ -12,7 +12,7 @@ applications:
     enabled: true
     repository: https://github.com/turao/istio-stuff
     revision: HEAD
-    path: apps
+    path: argocd
     namespace: argocd
     prune: true
     selfHeal: true
